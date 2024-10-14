@@ -1,0 +1,13 @@
+<?php require 'layout/header.phtml'?>
+<?php if (!empty($items)): ?>
+    <?php foreach($items as $key): ?>
+        <ul>
+            <li><?=$key->instrumento?></li>
+        </ul>
+    <?php endforeach; ?>
+<?php else: ?>
+    <h1>No hay instrumentos disponibles en este momento.</h1>
+<?php endif; ?>
+<?php require 'layout/footer.phtml'?>
+
+
