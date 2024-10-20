@@ -1,0 +1,13 @@
+<?php require 'templates/header.phtml'?>
+<?php if (!empty($items)): ?>
+    <?php foreach($items as $key): ?>
+        <div class="list-group">
+            <li class="list-group-item list-group-item-action"><?=$key->instrumento?></li>
+    </div>
+    <?php endforeach; ?>
+<?php else: ?>
+    <h1>No hay instrumentos disponibles en este momento.</h1>
+<?php endif; ?>
+<?php require 'templates/footer.phtml'?>
+
+
