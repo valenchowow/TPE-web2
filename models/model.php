@@ -18,7 +18,7 @@
             $query = $this->db->query('SHOW TABLES');
             $tables = $query->fetchAll();
             if(count($tables) == 0) {
-                $password='$2y$10$w0WyWsJc4UE87U8QRdyVRuwYq.ZdsPI57DMHip2oCRxkke.e.AbQW';
+                $password='$2y$10$/5NWKVyxKiYbO7lmSSYnxO5G1Ug7tPrkcZKm1NISv9dnHyLMJ1GSi';
                 $sql =<<<END
                 CREATE TABLE `instrumentos` (
                 `id` int(255) NOT NULL,
@@ -73,7 +73,7 @@
                 --
 
                 INSERT INTO `usuarios` (`id_usuario`, `email`, `contraseña`) VALUES
-                (4, 'valentin102005@gmail.com','$password');
+                (4, 'webadmin@gmail.com','$password');
 
                 --
                 -- Índices para tablas volcadas
