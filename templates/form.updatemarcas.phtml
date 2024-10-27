@@ -1,0 +1,11 @@
+<?php require_once 'templates/header.phtml'?>
+<form action="http://localhost/TPEWEB2/updatemarcas1/" method="POST" class="form-control" >
+    <label for="nombre_de_marca">NOMBRE DE MARCA</label>
+    <input type="text" name="nombre_de_marca" required class="form-control" >
+    <label for="direccion">DIRECCION</label>
+    <input type="text" name="direccion" class="form-control" >
+    <input type="hidden" name="ID_MARCAS" value="<?php  echo $id; ?>">
+    <input type="submit" value="Actualizar" class="form-control">
+</form>
+<?php require_once 'templates/footer.phtml'?>
+

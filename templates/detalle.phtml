@@ -1,0 +1,9 @@
+
+<ul class="list-group">
+    <?php require 'templates/header.phtml'?>
+    <?php foreach($detalle as $key):?>      
+        <li class="list-group-item list-group-item-action">Precio:  <?=$key->precio?></li>
+        <li class="list-group-item list-group-item-action">Stock: <?=$key->stock?></li>
+    <?php endforeach?>
+</ul>
+<?php require 'templates/footer.phtml'?>
